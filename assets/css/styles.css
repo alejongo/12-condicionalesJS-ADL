@@ -1,0 +1,37 @@
+#app-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "sidebar footer footer";
+  grid-template-columns: 150px 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+}
+
+#header {
+  grid-area: header;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  #app-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "content content content"
+      "footer footer footer";
+  }
+
+  #sidebar {
+    display: none;
+  }
+}
