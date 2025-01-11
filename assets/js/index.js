@@ -7,7 +7,7 @@
 const dog = document.querySelector('#dog')
 let count = 0
 
-addEventListener('click', () => {
+dog.addEventListener('click', () => {
     count++
     count % 2 != 0
         ? dog.style.outline = "3px solid #ef4444"
