@@ -6,42 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Document</title>
+    <title>Border Click | Desafio ADL</title>
 </head>
 
-<body>
+<body class="bg-gray-100">
     <div id="app-container" class="h-screen">
-        <header id="header" class="bg-indigo-800 text-white p-2 text-2xl max-h-[50px] flex justify-between">
-            <div class="font-bold">Header</div>
+        <header id="header" class="bg-indigo-800 text-white p-2 text-xl max-h-[50px] flex justify-between items-center">
+            <div class=" font-bold">CondJS</div>
             <nav class="flex gap-5 items-center sm:hidden">
-                <ul class="flex gap-5 text-sm">
-                    <li class="p-2 hover:bg-indigo-400 hover:text-white rounded"><a href="">Proyecto 1</a></li>
-                    <li class="p-2 hover:bg-indigo-400 hover:text-white rounded"><a href="">Proyecto 2</a></li>
-                    <li class="p-2 hover:bg-indigo-400 hover:text-white rounded"><a href="">Proyecto 3</a></li>
+                <ul class="flex gap-1 text-xs items-center">
+                    <li class="p-2 bg-indigo-400 text-white rounded"><a href="#">Border Click</a></li>
+                    <li class="p-2 hover:outline outline-2 outline-indigo-400 rounded"><a href="stickers.html">Stickers
+                            promo</a>
+                    </li>
+                    <li class="p-2 hover:outline outline-2 outline-indigo-400 rounded"><a
+                            href="passwords.html">Passwords</a></li>
                 </ul>
             </nav>
         </header>
 
-        <nav id="sidebar" class="bg-slate-200 block">
+        <nav id="sidebar" class="bg-white" block">
             <ul class="flex flex-col space-y-2 mt-4 pl-3">
-                <li class="p-2 hover:bg-indigo-400 hover:text-white rounded"><a href="">Proyecto 1</a></li>
-                <li class="p-2 hover:bg-indigo-400 hover:text-white rounded"><a href="">Proyecto 2</a></li>
-                <li class="p-2 hover:bg-indigo-400 hover:text-white rounded"><a href="">Proyecto 3</a></li>
+                <li class="p-2 bg-indigo-400 text-white rounded"><a href="#">Border Click</a></li>
+                <li class="p-2 hover:outline outline-2 outline-indigo-400 rounded"><a href="stickers.html">Stickers
+                        promo</a></li>
+                <li class="p-2 hover:outline outline-2 outline-indigo-400 rounded"><a
+                        href="passwords.html">Passwords</a></li>
             </ul>
         </nav>
 
-        <section class="p-5">
-            <h1>Test tiem</h1>
-            <h1>Test tiem</h1>
-            <h1>Test tiem</h1>
-            <h1>Test tiem</h1>
+        <section id="content"
+            class="p-5 bg-white w-auto mx-auto h-auto my-auto rounded-lg flex flex-col justify-center">
+            <h1 class="text-2xl font-bold flex justify-center mb-4 text-indigo-800">Click the dog</h1>
+            <img id="dog" class="rounded-lg mx-auto"
+                src="https://cdn.britannica.com/80/232780-050-404D6708/Pembroke-welsh-corgi-dog.jpg" width="450">
         </section>
-        <footer id="footer" class="pl-2 bg-indigo-600 h-[40px] text-white">Footer</footer>
+        <footer id="footer" class="text-xs pl-2 bg-indigo-600 h-[40px] text-white">Con ❤️ por Alejandro Gómez Montoya
+        </footer>
     </div>
 
 
 
-
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

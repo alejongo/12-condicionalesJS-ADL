@@ -16,6 +16,10 @@
   grid-area: sidebar;
 }
 
+#content {
+  grid-area: content;
+}
+
 #footer {
   grid-area: footer;
   display: flex;
